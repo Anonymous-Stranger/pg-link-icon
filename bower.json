@@ -1,6 +1,6 @@
 {
   "name": "pg-link-icon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "authors": [
     "Akash Gaonkar <akashgaonkar@gmail.com>"
   ],
@@ -18,9 +18,11 @@
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#~1.0.3",
-    "pg-model": "pg-model#*"
+    "pg-model": "pg-model#*",
+    "paper-icon-button": "PolymerElements/paper-icon-button#~1.0.2"
   },
   "keywords": [
     "pg-model"
-  ]
+  ],
+  "homepage": "https://github.com/Anonymous-Stranger/pg-link-icon"
 }
