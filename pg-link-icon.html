@@ -1,0 +1,26 @@
+
+<link rel='import' href='../polymer/polymer.html'/>
+
+<link rel='import' href='../paper-icon-button/paper-icon-button.html'/>
+
+<link rel='import' href='../pg-model/behaviors/pg-link-behavior.html'/>
+
+<dom-module id='pg-link-icon'>
+	
+	<template>
+		<paper-icon-button icon='{{icon}}'></paper-icon-button>
+	</template>
+
+	<script>
+	Polymer({
+		is: 'pg-link-icon',
+		behaviors: [PageModel.PGLinkBehavior],
+		properties: {
+			icon: {String},
+			src: {String},
+			alt: {String}
+		}
+	});
+	</script>
+
+</dom-module>

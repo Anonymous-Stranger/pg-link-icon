@@ -1,0 +1,26 @@
+{
+  "name": "pg-link-icon",
+  "version": "1.0.0",
+  "authors": [
+    "Akash Gaonkar <akashgaonkar@gmail.com>"
+  ],
+  "description": "A Polymer Paper icon-link for pg-model",
+  "main": "pg-icon-link.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "../",
+    "test",
+    "tests",
+    "../../bower_components"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~1.0.3",
+    "pg-model": "pg-model#*"
+  },
+  "keywords": [
+    "pg-model"
+  ]
+}

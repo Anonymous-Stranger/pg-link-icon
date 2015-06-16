@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- author: Akash Gaonkar -->
+
+<html>
+	
+	<head>
+		<meta charset='utf-8'/>
+		<title> Page Link Icon Demo </title>
+
+		<!-- Polymer Web Components -->
+		<script src='../../webcomponentsjs/webcomponents-lite.min.js'></script>
+
+		<!-- Polymer Paper Elements -->
+		<link rel='import' href='../../paper-toolbar/paper-toolbar.html'/>
+		<link rel='import' href='../../iron-icons/iron-icons.html'/>
+
+		<!-- Imported Elements -->
+		<link rel='import' href='../../pg-model/pg-headed-model.html'/>
+		<link rel='import' href='../../pg-model/pg-page.html'/>
+		<link rel='import' href='../../pg-model/pg-link.html'/>
+
+		<!-- Custom Components -->
+		<link rel='import' href='../pg-link-icon.html'/>
+
+		<style>
+
+			pg-page {
+				font-size: 10em;
+				text-align: center;
+			}
+			#home { background-color: skyblue; }
+			#page1 { background-color: goldenrod; }
+			#page2 { background-color: forestgreen; }
+			#page3 { background-color: purple; }
+		</style>
+
+	</head>
+
+	<body unresolved class='fullbleed'>
+		<pg-headed-model default='home'>
+			<!-- paper-toolbar and .paper-header elements become part of the header. -->
+			<paper-toolbar justify='around'>
+				<pg-link hash='home'><h1>Page Link Demo</h1></pg-link>
+				<pg-link-icon hash='page1' icon='star'></pg-link-icon>
+				<pg-link-icon hash='page2' icon='star'></pg-link-icon>
+				<pg-link-icon hash='page3' icon='star'></pg-link-icon>
+			</paper-toolbar>
+
+			<!-- Everything else becomes part of the content. -->
+			<pg-page 	id='home'  hash='home'  class='flex layout vertical center-center'><span>Home</span></pg-page>
+			<pg-page 	id='page1' hash='page1' class='flex layout vertical center-center'><span>Another Page</span></pg-page>
+			<pg-page 	id='page2' hash='page2' class='flex layout vertical center-center'><span>Third Page</span></pg-page>
+			<pg-page 	id='page3' hash='page3' class='flex layout vertical center-center'><span>Last Page</span></pg-page>
+		</pg-headed-model>
+	</body>
+
+</html>
