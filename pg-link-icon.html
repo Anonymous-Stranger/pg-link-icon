@@ -8,19 +8,19 @@
 <dom-module id='pg-link-icon'>
 	
 	<template>
-		<paper-icon-button icon='{{icon}}'></paper-icon-button>
+		<paper-icon-button icon='{{icon}}' src='{{src}}' alt='{{alt}}'></paper-icon-button>
 	</template>
 
 	<script>
-	Polymer({
-		is: 'pg-link-icon',
-		behaviors: [PageModel.PGLinkBehavior],
-		properties: {
-			icon: {String},
-			src: {String},
-			alt: {String}
-		}
-	});
+		Polymer({
+			is: 'pg-link-icon',
+			behaviors: [PageModel.PGLinkBehavior],
+			properties: {
+				icon: { type: String },
+				src: { type: String },
+				alt: { type: String }
+			}
+		});
 	</script>
 
 </dom-module>
